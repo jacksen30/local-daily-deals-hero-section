@@ -4,18 +4,34 @@
         <meta charset="UTF-8" />
         <title>Local Deals Daily Header & Hero Section</title>
 
-        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="style.css" />
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
 
     <body>
-        <img  src="./burger-desktop.png" alt="delicious burger" />
-        <h2>We aren't just Discounts We're a Community Hub.</h2>
-        <p>We're here to connect you with the vibrant food scene in your area, helping you uncover hidden gems and supporting the backbone of your community - local businesses.</p>
-        <button>Learn More</button>
-        <button>See Todays Amazing Deals</button>
-        <h3>Sink your Teeth into the Unbeatable Savings</h3>
-        <p>We're here to connect you with the vibrant food scene in your area, helping you uncover hidden gems.</p>
+        <main class="flex">
+            <header>
+                <nav>
 
+                </nav>
+            </header>
+            <section class=" flex hero-section">
+                <div class="flex container hero">
+                    <img class="hero__img"  src="./burger-desktop.png" alt="delicious burger" />
+                    <h2 class="hero__title">We aren't just <span class="green">Discounts</span> We're a Community Hub.</h2>
+                    <p class="hero__text--body">We're here to connect you with the vibrant food scene in your area, helping you uncover hidden gems and supporting the backbone of your community - local businesses.</p>
+                    <div class="hero-section__btn-wrapper">
+                        <button class="btn btn--secondary">Learn More</button>
+                        <button class="btn btn--primary">See Todays Amazing Deals</button>
+                    </div>
+                </div>
+            </section>
+            <section class="deal-cards-section flex">
+                <div class="flex container">
+                    <h3 class="deal-cards-section__title">Sink your Teeth into the<span class="green">Unbeatable</span> Savings</h3>
+                    <p class="deal-cards-section__text-body">We're here to connect you with the vibrant food scene in your area, helping you uncover hidden gems.</p>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
