@@ -107,6 +107,10 @@ The element will be visually hidden but will still be read by screen reader tech
   url('../fonts/Gazpacho-Black.ttf') format('truetype');
 }
 
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -132,18 +136,7 @@ section {
   flex-direction: column;
 }
 
-/* .hero {
-
-} */
-
-/* .hero__img {
-
-} */
-
-.hero__title,
-.deal-cards-section__title,
-.testimonials-section__title,
-.faq-section__title {
+.section__title {
   font-family: 'Gazpacho', serif;
   font-weight: 900;
   font-size: 24px;
@@ -151,16 +144,10 @@ section {
   text-align: center;
 }
 
-.hero__text--body,
-.deal-cards-section__text-body,
-.testimonials-section__text-body,
-.faq-section__text--body {
+.section__description {
   color: #000;
   text-align: center;
-  font-family: 'Manrope', sans-serif;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 150%; /* 18px */
 }
 
@@ -230,42 +217,27 @@ section {
 
 .testimonial__card__title {
   color: #303030;
-  font-family: Manrope;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
 }
 
 .testimonial__card__sub-title {
   color: #808080;
-  font-family: Manrope;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 150%; /* 18px */
 }
 
 .testimonial__card__text--body {
   color: #808080;
-  font-family: Manrope;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 150%; /* 21px */
 }
 
-
-
 .footer-section {
   background-color: #00460B;
+  color: #FFF;
 }
-
-/* .footer-section.container {
-  justify-content: flex-start;
-  align-items: flex-start;
-  justify-items: flex-start;
-} */
 
 .footer-div {
   width: 100%;
@@ -274,10 +246,8 @@ section {
 
 .footer-div__title {
   padding-top: 27px;  /* will need to be updated for other footer titles that share this class */
-  color: #FFF;
   font-family: 'Gazpacho', serif;
   font-size: 24px;
-  font-style: normal;
   font-weight: 900;
   line-height: normal;
 }
@@ -299,30 +269,21 @@ section {
 .footer-div a {
   text-decoration: none;
   color: #FFF;
-  font-family: Manrope;
   font-size: 12px;
-  font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 18px */
 }
 
 .footer-div__text--body {
-  color: #FFF;
-  font-family: Manrope;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 150%; /* 18px */
 }
 
 .footer__text--copyright {
-  color: #FFF;
-  font-family: Manrope;
   font-size: 12px;
-  font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 14.4px */
- margin: 18px 0 14px 0; /* make updates later for pixel perfect */
+  margin: 18px 0 14px 0; /* make updates later for pixel perfect */
 }
 
 .social {
@@ -332,5 +293,4 @@ section {
 .social a {
   font-size: 30px;
   margin: 0 12px;
-  color: #FFF;
 }
