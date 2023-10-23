@@ -281,3 +281,46 @@ section {
   font-weight: 900;
   line-height: normal;
 }
+
+.footer-line {
+  margin: 12px 0;
+  fill: #FFF;
+  stroke-width: 1px;
+  stroke: #D0D0D0;
+  width: 100%;
+}
+
+.footer-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-div a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 18px */
+}
+
+.footer-div__text--body {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+
+.footer__text--copyright {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  padding: 14px 0; /* make updates later for pixel perfect */
+}
