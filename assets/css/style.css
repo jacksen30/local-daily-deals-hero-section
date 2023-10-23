@@ -322,5 +322,15 @@ section {
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 14.4px */
-  padding: 14px 0; /* make updates later for pixel perfect */
+ margin: 18px 0 14px 0; /* make updates later for pixel perfect */
+}
+
+.social {
+  flex-direction: row;
+}
+
+.social a {
+  font-size: 30px;
+  margin: 0 12px;
+  color: #FFF;
 }
