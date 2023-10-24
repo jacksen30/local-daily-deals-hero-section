@@ -300,3 +300,44 @@ section {
   font-size: 30px;
   margin: 0 12px;
 }
+
+/* Header Section - currently in testing */
+
+header {
+  position: relative;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+header nav.flex {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+.nav-list {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-list li {
+  padding: 8px 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+      display: none;
+  }
+
+  .nav-list {
+      display: flex;
+      gap: 10px;
+  }
+}
