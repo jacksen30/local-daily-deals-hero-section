@@ -321,10 +321,10 @@ header nav.flex {
 }
 
 .menu-icon .bar {
-  width: 25px;
-  height: 3px;
+  width: 27px;
+  height: 4px;
   background-color: #333;
-  margin: 4px 0;
+  margin: 5px 0;
 }
 
 .nav-list {
