@@ -305,7 +305,7 @@ section {
 
 header {
   position: relative;
-  background-color: #ffffff;
+  background-color: #FFF;
   padding: 1rem;
 }
 
@@ -318,6 +318,7 @@ header nav.flex {
 
 .header-btn {
   margin-left: auto;
+  height: 32px;
 }
 
 .menu-icon .bar {
@@ -336,6 +337,16 @@ header nav.flex {
 
 .nav-list li {
   padding: 8px 12px;
+}
+
+.nav-list li a {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-list :first-child {
+  padding-top: 0; /* Removes padding from first li element when nav-list is open on mobile - will require resetting for desktop */
 }
 
 @media screen and (min-width: 768px) {
