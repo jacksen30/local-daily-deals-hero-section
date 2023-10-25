@@ -493,7 +493,7 @@ header nav.flex {
 }
 
 .card--back__text-wrapper {
-  margin: 12px 10px 0 28px;
+  margin: 0 10px 0 28px;
 }
 
 .card--back__main-heading-price {
@@ -513,12 +513,12 @@ header nav.flex {
   font-family: 'Gazpacho', serif;
   font-size: 16px;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 .card--back__body-text {
   color: #808080;
-  font-size: 13px;
+  font-size: 13.7px;
   margin-top: 1px;
 }
 
