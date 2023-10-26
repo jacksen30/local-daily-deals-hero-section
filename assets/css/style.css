@@ -463,22 +463,11 @@ header nav.flex {
 
 /* BACK OF CARD */
 
-
-/* .card-back-btn some properties can probably be removed - card having flex is causing button to be centered */
-
 .card-back-btn {
-  color: #FFF;
-  background-color: var(--color1);
-  border: none;
-  width: 42px; /* +10px increased width and height compared to figma design */
-  height: 42px;
-  border-radius: 100%;
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 2.7rem;
+  color: var(--color1);
   margin: 20px 0 0 20px;
-  padding: 0; /* resets default / user agent btn padding affecting computed size */
-  /* align-self: flex-start; */ /* THIS PROPERTY WAS AFFECTING JS FLIP FUNCTION */
-  position: absolute; /* used instead of align self */
+  position: absolute;
   left: 5px;
 }
 
