@@ -16,13 +16,34 @@ function toggleMenu() {
 // JavaScript to toggle card rotation on click
 
 const cards = document.querySelectorAll(".card");
+const cardFront = document.getElementsByClassName("card--front");
+const cardBack = document.getElementsByClassName(".card--back");
+
+// cards.forEach(card => {
+//   const toggleButtons = card.querySelectorAll(".toggle-button");
+
+//   toggleButtons.forEach(button => {
+//     button.addEventListener("click", function() {
+//       card.classList.toggle("is-flipped");
+//     });
+//   });
+// });
 
 cards.forEach(card => {
-  const toggleButtons = card.querySelectorAll(".toggle-button");
+  const toggleButtons = card.querySelectorAll(".card--front");
 
   toggleButtons.forEach(button => {
-    button.addEventListener("click", function() {
+    card.addEventListener("click", function() {
       card.classList.toggle("is-flipped");
     });
   });
 });
+
+
+// cardBack.addEventListener("click", function() {
+//   card.classList.toggle("is-flipped");
+// });
+
+// cardFront.addEventListener("click", function() {
+//   card.classList.toggle("is-flipped");
+// });
