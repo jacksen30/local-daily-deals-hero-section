@@ -3,6 +3,7 @@
 function toggleMenu() {
     const header = document.getElementById("header");
     const navList = document.getElementById("nav-list");
+    const navListClass = document.querySelector(".nav-list");
     const headerBtn = document.getElementById("header-btn");
     if (navList.style.display === "none" || navList.style.display === "") {
         navList.style.display = "block";
@@ -14,6 +15,7 @@ function toggleMenu() {
         headerBtn.style.display = "block";
         header.style.backgroundColor = "white";
         header.style.height = "";
+
     }
 }
 
