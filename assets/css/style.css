@@ -569,6 +569,27 @@ header nav.flex {
 
 /* END OF DEALS CARDS - NEEDS MAJOR REFACTORING STILL */
 
+/* TESTING ONLY */
+
+/* Toggle Menu Button Cross state */
+.menu-icon.cross .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.cross .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.cross .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Ensure all .bar transitions have the same duration and effect */
+.menu-icon .bar {
+  transition: all 0.3s ease;
+}
+
+
 
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
