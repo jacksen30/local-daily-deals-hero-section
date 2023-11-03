@@ -599,7 +599,7 @@ header nav.flex {
   left: 50%; /* Center the bars horizontally in the container */
   transform: translate(-50%, -50%); /* This ensures the center of the bar is in the center of the container */
   width: 32px;
-  background-color: white;;
+  background-color: white;
 }
 
 .menu-icon.cross .bar:nth-child(1) {
