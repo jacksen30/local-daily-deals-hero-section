@@ -285,11 +285,20 @@ section {
   line-height: 150%; /* 18px */
 }
 
-.footer__text--copyright {
+.footer__text--bottom {
   font-size: 12px;
   font-weight: 600;
   line-height: 120%; /* 14.4px */
   margin: 18px 0 14px 0; /* make updates later for pixel perfect */
+}
+
+.footer__text--bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__text--bottom-desktop {
+  display: none;
 }
 
 .social {
@@ -595,4 +604,44 @@ header nav.flex {
     color: black;
   }
 
+  .footer-section .container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .footer-div {
+    width: 25%;
+  }
+
+  .footer-line {
+    width: 70%;
+  }
+
+  .divider-b {
+    padding: 0 1rem;
+  }
+
+  .bottom-container {
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+
+  .footer-div-3 li:nth-of-type(4),
+  .footer-div-3 li:nth-of-type(5) {
+    display: none;
+  }
+
+  .footer__text--bottom-desktop {
+    display: block;
+  }
+
+  /* Below needs to be written and thought out much better and possibly implemented at a larger width media quiery */
+  .deals-multicard-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
