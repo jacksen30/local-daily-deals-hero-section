@@ -569,26 +569,50 @@ header nav.flex {
 
 /* END OF DEALS CARDS - NEEDS MAJOR REFACTORING STILL */
 
-/* TESTING ONLY */
+/* Base styles for the menu icon container */
+.menu-icon {
+  cursor: pointer;
+  /* Define the size of the menu icon container */
+  width: 35px; /* Set a width that fits your design */
+  height: 35px; /* Set a height to fit the bars */
+  position: relative; /* Positions the bars absolutely relative to this container */
+  /* Center the menu icon in its parent if necessary
+     or use other positioning to place it where you want it */
+}
 
-/* Toggle Menu Button Cross state */
+/* Base styles for the bars */
+.menu-icon .bar {
+  width: 27px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px auto; /* Center the bars horizontally */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+  /* They are relatively positioned by default */
+}
+
+/* Styles for the cross state */
+.menu-icon.cross .bar {
+  margin: 0; /* Reset margin to 0 for the cross state */
+  position: absolute;
+  top: 50%; /* Center the bars vertically in the container */
+  left: 50%; /* Center the bars horizontally in the container */
+  transform: translate(-50%, -50%); /* This ensures the center of the bar is in the center of the container */
+  width: 32px;
+  background-color: white;;
+}
+
 .menu-icon.cross .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: translate(-50%, -50%) rotate(45deg); /* Rotate around the center of the bar */
 }
 
 .menu-icon.cross .bar:nth-child(2) {
-  opacity: 0;
+  opacity: 0; /* The middle bar disappears */
 }
 
 .menu-icon.cross .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
+  transform: translate(-50%, -50%) rotate(-45deg); /* Rotate around the center of the bar */
 }
-
-/* Ensure all .bar transitions have the same duration and effect */
-.menu-icon .bar {
-  transition: all 0.3s ease;
-}
-
 
 
 /* Media Queries for viewports wider that 768px */
