@@ -292,6 +292,10 @@ header.open nav.flex {
   flex-direction: column;
 }
 
+.hero-text__desktop-intro {
+  display: none;
+}
+
 .hero-section__btn-wrapper {
   flex-direction: row;
   justify-content: center;
@@ -305,7 +309,6 @@ header.open nav.flex {
 .deals-card-section {
   background-color: #F7FFFC;
 }
-
 
 /* Testimonials Section */
 .testimonials__card-wrapper {
@@ -618,6 +621,62 @@ header.open nav.flex {
   .nav-list li a {
     color: black;
   }
+
+  /* TESTING NEW DESKTOP - HERO SECTION LAYOUT */
+  .hero {
+    flex-direction: row-reverse;
+  }
+
+  .hero-section {
+    padding: 0 0 2rem 0;
+  }
+
+  .hero__img {
+    width: 60%;
+    max-width: 650px;
+  }
+
+  .hero-text-wrapper--desktop {
+    width: 50%;
+    max-width: 850px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px; /* Gives all flex children a gap */
+  }
+
+  .hero-text__desktop-intro {
+    display: block;
+    padding: 5px 5px;
+    background-color: #F0F7F4;
+  }
+
+  .hero-text-wrapper--desktop .section__title,
+  .hero-text-wrapper--desktop .section__description {
+    text-align: left;
+  }
+
+  .hero-text-wrapper--desktop .section__title {
+    font-size: 44px; /*hero .section__title only */
+  }
+
+  .hero-text-wrapper--desktop .section__description {
+    width: 85%;
+  }
+
+  .hero-section__btn-wrapper {
+    justify-content: flex-start;
+  }
+
+  /* needs to be moved into own section */
+  .section__title {
+    font-size: 36px;
+  }
+
+  .section__description {
+    font-size: 18px;
+  }
+
+  /* END - TESTING NEW DESKTOP - HERO SECTION LAYOUT - END */
 
   .footer-section .container {
     flex-direction: row;
