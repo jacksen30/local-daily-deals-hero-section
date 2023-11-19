@@ -317,6 +317,11 @@ header.open nav.flex {
   gap: 20px;
 }
 
+/* Hide shorter paragrapgh quote on testimonial cards 1, 5 & 6 */
+.hide-on-mobile {
+  display:none;
+}
+
 .testimonial__card {
   background-color: #F8F8F8;
   padding: 12px 28px;
@@ -354,6 +359,10 @@ header.open nav.flex {
   color: #808080;
   font-size: 14px;
   line-height: 150%; /* 21px */
+}
+
+.testimonial--desktop-only {
+  display: none; /* Ensures only the first 3 Testiomonial cards are visible on mobile */
 }
 
 
@@ -677,6 +686,40 @@ header.open nav.flex {
   }
 
   /* END - TESTING NEW DESKTOP - HERO SECTION LAYOUT - END */
+
+  /* Testimonials Section */
+
+  .testimonial--desktop-only {
+    display: block; /* Ensures all Testiomonial cards are visible on desktop */
+  }
+
+    /* Hides longer paragrapgh quote on testimonial cards 1, 5 & 6 */
+  .hide-on-desktop {
+   display: none;
+  }
+
+    /* Shows shorter paragrapgh quote on testimonial cards 1, 5 & 6 */
+  .hide-on-mobile {
+    display: block;
+  }
+
+  .testimonials__card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .testimonial__card {
+    max-width: 430px;
+  }
+
+  .testimonials__card-wrapper .testimonial__card:nth-of-type(1),
+  .testimonials__card-wrapper .testimonial__card:nth-of-type(5),
+  .testimonials__card-wrapper .testimonial__card:nth-of-type(9) {
+    height: 153px; /* needs to be checked properly - implement so all cards have the same height */
+    width: 250px;
+  }
+
+  /* Footer Section */
 
   .footer-section .container {
     flex-direction: row;
