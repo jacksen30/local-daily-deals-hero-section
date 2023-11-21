@@ -310,132 +310,6 @@ header.open nav.flex {
   background-color: #F7FFFC;
 }
 
-/* Testimonials Section */
-.testimonials__card-wrapper {
-  background-color: #FFF;
-  padding-top: 63px;
-  gap: 20px;
-}
-
-/* Hide shorter paragrapgh quote on testimonial cards 1, 5 & 6 */
-.hide-on-mobile {
-  display:none;
-}
-
-.testimonial__card {
-  background-color: #F8F8F8;
-  padding: 12px 28px;
-  border-radius: 5.467px;
-}
-
-.testimonial__card__head-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.testimonial__card__avatar {
-  width: 54px;
-  height: 54px;
-  margin-right: 13px;
-  border-radius: 50px;
-}
-
-.testimonial__card__title {
-  color: #303030;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-}
-
-.testimonial__card__sub-title {
-  color: #808080;
-  font-size: 12px;
-  line-height: 150%; /* 18px */
-}
-
-.testimonial__card__text--body {
-  color: #808080;
-  font-size: 14px;
-  line-height: 150%; /* 21px */
-}
-
-.testimonial--desktop-only {
-  display: none; /* Ensures only the first 3 Testiomonial cards are visible on mobile */
-}
-
-
-/* Footer Section */
-.footer-section {
-  background-color: #00460B;
-  color: #FFF;
-}
-
-.footer-div {
-  width: 100%;
-  align-items: flex-start;
-}
-
-.footer-div__title {
-  padding-top: 27px;  /* will need to be updated for other footer titles that share this class */
-  font-family: 'Gazpacho', serif;
-  font-size: 24px;
-  font-weight: 900;
-}
-
-.footer-line {
-  margin: 12px 0;
-  fill: #FFF;
-  stroke-width: 1px;
-  stroke: #D0D0D0;
-  width: 100%;
-}
-
-.footer-div ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-div a {
-  text-decoration: none;
-  color: #FFF;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 150%; /* 18px */
-}
-
-.footer-div__text--body {
-  font-size: 12px;
-  line-height: 150%; /* 18px */
-}
-
-.footer__text--bottom {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 120%; /* 14.4px */
-  margin: 18px 0 14px 0; /* make updates later for pixel perfect */
-}
-/* Could possibly be refactor in mobile first section as all footer li a elements ? */
-.footer__text--bottom a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer__text--bottom-desktop {
-  display: none;
-}
-
-.social {
-  flex-direction: row;
-}
-
-.social a {
-  font-size: 30px;
-  margin: 0 12px;
-}
-
 /* START OF DEALS CARDS - NEEDS MAJOR REFACTORING STILL */
 
 .card {
@@ -597,6 +471,224 @@ header.open nav.flex {
 /* END OF DEALS CARDS - NEEDS MAJOR REFACTORING STILL */
 
 
+/* Testimonials Section */
+.testimonials__card-wrapper {
+  background-color: #FFF;
+  padding-top: 63px;
+  gap: 20px;
+}
+
+/* Hide shorter paragrapgh quote on testimonial cards 1, 5 & 6 */
+.hide-on-mobile {
+  display:none;
+}
+
+.testimonial__card {
+  background-color: #F8F8F8;
+  padding: 12px 28px;
+  border-radius: 5.467px;
+}
+
+.testimonial__card__head-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.testimonial__card__avatar {
+  width: 54px;
+  height: 54px;
+  margin-right: 13px;
+  border-radius: 50px;
+}
+
+.testimonial__card__title {
+  color: #303030;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.testimonial__card__sub-title {
+  color: #808080;
+  font-size: 12px;
+  line-height: 150%; /* 18px */
+}
+
+.testimonial__card__text--body {
+  color: #808080;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}
+
+.testimonial--desktop-only {
+  display: none; /* Ensures only the first 3 Testiomonial cards are visible on mobile */
+}
+
+
+/* START OF FAQ's ACCORDION - REQUIRES FURTHER REFACTORING */
+
+.faq-section {
+  width: 100%;
+  background-color: #F0F8F5;
+}
+
+.accordion-wrapper {
+  position: relative;
+  /* background-color: #fff; */
+  padding: 10px;
+  /* border-radius: 20px; */
+  width: 350px; /* May need updating at a later date, definitley should increase width on Desktop ?? */
+}
+
+details {
+  padding: 5px 0 5px 0;
+}
+
+.accordion-div {
+  position: relative;
+  color: hsl(237, 12%, 33%);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+}
+
+.accordion-question {
+  font-weight: 500;
+  color: #222222;
+  font-size: 16px;
+}
+
+.accordion-answer {
+  padding-bottom: 5px;
+  display: block;
+  color: hsl(240, 6%, 50%);
+  transform: translateY(0%);
+}
+
+.accordion-div.accordion-open .accordion-answer {
+  animation: slideDown 1.5s ease forwards;
+}
+
+.accordion-div.accordion-open .accordion-question {
+  /* styles for the FAQ that has an open <details> element */
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+
+.accordion-question:hover {
+  color: hsl(14, 88%, 65%);
+  cursor:pointer;
+}
+
+.accordion-div > summary {
+  list-style: none;
+}
+
+.custom-icon {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+
+.accordion-div .custom-icon {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-div.accordion-open .custom-icon {
+  /* styles for the FAQ that has an open <details> element */
+  top: 12px; /* ensures pixel perfect center alignment with text when rotated */
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* END OF FAQ's ACCORDION - REQUIRES FURTHER REFACTORING */
+
+
+/* Footer Section */
+.footer-section {
+  background-color: #00460B;
+  color: #FFF;
+}
+
+.footer-div {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.footer-div__title {
+  padding-top: 27px;  /* will need to be updated for other footer titles that share this class */
+  font-family: 'Gazpacho', serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.footer-line {
+  margin: 12px 0;
+  fill: #FFF;
+  stroke-width: 1px;
+  stroke: #D0D0D0;
+  width: 100%;
+}
+
+.footer-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-div a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%; /* 18px */
+}
+
+.footer-div__text--body {
+  font-size: 12px;
+  line-height: 150%; /* 18px */
+}
+
+.footer__text--bottom {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  margin: 18px 0 14px 0; /* make updates later for pixel perfect */
+}
+/* Could possibly be refactor in mobile first section as all footer li a elements ? */
+.footer__text--bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__text--bottom-desktop {
+  display: none;
+}
+
+.social {
+  flex-direction: row;
+}
+
+.social a {
+  font-size: 30px;
+  margin: 0 12px;
+}
+
+
+
+
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
 
@@ -717,6 +809,12 @@ header.open nav.flex {
   .testimonials__card-wrapper .testimonial__card:nth-of-type(9) {
     height: 153px; /* needs to be checked properly - implement so all cards have the same height */
     width: 250px;
+  }
+
+  /* ACCORDION WRAPPER SECTION */
+
+  .accordion-wrapper {
+    width: 550px;
   }
 
   /* Footer Section */
