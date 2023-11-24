@@ -542,12 +542,13 @@ header.open nav.flex {
   width: 350px; /* May need updating at a later date, definitley should increase width on Desktop ?? */
 }
 
-details {
+/* details {
   padding: 5px 0 5px 0;
-}
+} */
 
 .accordion-div {
   position: relative;
+  padding: 5px 0 5px 0;
   color: hsl(237, 12%, 33%);
 }
 
@@ -591,8 +592,11 @@ details {
 }
 
 .accordion-div > summary {
-  /* list-style: none; */
-  list-style-type: none;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
 }
 
 .custom-icon {
