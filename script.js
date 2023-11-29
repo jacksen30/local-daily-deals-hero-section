@@ -20,17 +20,6 @@ function toggleMenu() {
 menuToggle.addEventListener("click", toggleMenu);
 
 
-// JavaScript to toggle card rotation on a click / touchend type event
-const cardElements = document.querySelectorAll(".card");
-
-cardElements.forEach(card => {
-  card.addEventListener("click", function() {
-    card.classList.toggle("is-flipped");
-  });
-});
-
-
-
 // JavaScript for FAQ's Accordion component interactivity
 
 function toggleAccordion(details) {
