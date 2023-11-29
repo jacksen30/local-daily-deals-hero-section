@@ -97,6 +97,7 @@ The element will be visually hidden but will still be read by screen reader tech
   src: url('../fonts/Gazpacho-Bold.woff2') format('woff2'),
   url('../fonts/Gazpacho-Bold.woff') format('woff'),
   url('../fonts/Gazpacho-Bold.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
@@ -105,6 +106,7 @@ The element will be visually hidden but will still be read by screen reader tech
   src: url('../fonts/Gazpacho-Black.woff2') format('woff2'),
   url('../fonts/Gazpacho-Black.woff') format('woff'),
   url('../fonts/Gazpacho-Black.ttf') format('truetype');
+  font-display: swap;
 }
 
 body {
