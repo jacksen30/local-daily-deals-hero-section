@@ -160,7 +160,8 @@ section {
 .section__title {
   font-family: 'Gazpacho', serif;
   font-weight: 900;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 26px;
   line-height: 130%;
   text-align: center;
 }
@@ -168,8 +169,8 @@ section {
 .section__description {
   color: #000;
   text-align: center;
-  font-size: 12px;
-  line-height: 150%; /* 18px */
+  font-size: 14px;
+  line-height: 130%; /* 18px */
 }
 
 .green {
@@ -201,7 +202,7 @@ header.open nav.flex {
 }
 
 .header-btn {
-  height: 32px;
+  height: 35px;
 }
 
 .header-btn.open {
@@ -220,7 +221,6 @@ header.open nav.flex {
   margin: 0px auto;
   padding-top: 100px;
   font-size: 30px;
-  text-align: center; /* unsure of best alignemt get feedback from people once final font and styling is selected */
 }
 
 .nav-list li {
@@ -685,7 +685,7 @@ details summary::-webkit-details-marker {
 
 .social a {
   font-size: 30px;
-  margin: 0 12px;
+  margin-right: 24px;
 }
 
 
