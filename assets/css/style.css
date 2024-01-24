@@ -642,6 +642,7 @@ details summary::-webkit-details-marker {
   stroke-width: 1px;
   stroke: #D0D0D0;
   width: 100%;
+  max-width: 350px;
 }
 
 .footer-div ul {
@@ -783,6 +784,11 @@ details summary::-webkit-details-marker {
 
   /* Testimonials Section */
 
+  /* test using on child container instead */
+  .testimonials-section {
+    max-width: 1593px;
+  }
+
   .testimonial--desktop-only {
     display: block; /* Ensures all Testiomonial cards are visible on desktop */
   }
@@ -864,7 +870,8 @@ details summary::-webkit-details-marker {
   .deals-multicard-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
 }
