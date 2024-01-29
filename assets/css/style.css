@@ -160,7 +160,6 @@ section {
 .section__title {
   font-family: 'Gazpacho', serif;
   font-weight: 900;
-  /* font-size: 24px; */
   font-size: 26px;
   line-height: 130%;
   text-align: center;
@@ -225,7 +224,6 @@ header.open nav.flex {
 
 .nav-list li {
   padding: 12px 0px;
-  /* font-family: sans-serif; */
   font-family: 'Urbanist', sans-serif;
 }
 
@@ -421,6 +419,9 @@ header.open nav.flex {
 }
 
 /* BACK OF CARD */
+.card--back {
+  color: var(--color2);
+}
 
 .card-back-btn {
   font-size: 2.7rem;
@@ -435,7 +436,7 @@ header.open nav.flex {
   padding: 12px;
   border: 0.95px solid #F2F2F2;
   border-radius: 7px;
-  box-shadow: 3.4688737392425537px 3.4688737392425537px 10.406620979309082px 0px #00000012; /*refactor by rounding ?? */
+  box-shadow: 3.47px 3.47px 10.4px 0px #00000012;
   margin-top: 45px; /* due to .card-back-btn been position absolute this helps to position rest of rear card content */
   margin-bottom: 12px;
 }
@@ -445,19 +446,16 @@ header.open nav.flex {
 }
 
 .card--back__main-heading-price {
-  color: #303030;
   font-size: 20px;
 }
 
 .card--back__main-heading-venue {
-  color: #303030;
   font-family: 'Gazpacho', serif;
   font-size: 20px;
   font-weight: 700;
 }
 
 .card--back__sub-title {
-  color: #303030;
   font-family: 'Gazpacho', serif;
   font-size: 16px;
   font-weight: 700;
@@ -506,7 +504,7 @@ header.open nav.flex {
 }
 
 .testimonial__card__title {
-  color: #303030;
+  color: var(--color2);
   font-size: 16px;
   font-weight: 600;
   line-height: 150%; /* 24px */
@@ -538,15 +536,9 @@ header.open nav.flex {
 
 .accordion-wrapper {
   position: relative;
-  /* background-color: #fff; */
   padding: 10px;
-  /* border-radius: 20px; */
-  width: 350px; /* May need updating at a later date, definitley should increase width on Desktop ?? */
+  width: 350px;
 }
-
-/* details {
-  padding: 5px 0 5px 0;
-} */
 
 .accordion-div {
   position: relative;
@@ -668,9 +660,9 @@ details summary::-webkit-details-marker {
   font-size: 12px;
   font-weight: 600;
   line-height: 120%; /* 14.4px */
-  margin: 18px 0 14px 0; /* make updates later for pixel perfect */
+  margin: 18px 0 14px 0;
 }
-/* Could possibly be refactor in mobile first section as all footer li a elements ? */
+
 .footer__text--bottom a {
   color: white;
   text-decoration: none;
@@ -688,7 +680,6 @@ details summary::-webkit-details-marker {
   font-size: 30px;
   margin-right: 24px;
 }
-
 
 
 
@@ -713,8 +704,6 @@ details summary::-webkit-details-marker {
 
   .nav-list {
       display: flex;
-      /* margin: 0px auto; */
-      /* gap: 10px; */
       padding: 0; /* Unsets what is used for mobile view hamburger menu */
   }
 
@@ -760,7 +749,7 @@ details summary::-webkit-details-marker {
   }
 
   .hero-text-wrapper--desktop .section__title {
-    font-size: 44px; /*hero .section__title only */
+    font-size: 44px;
   }
 
   .hero-text-wrapper--desktop .section__description {
@@ -780,7 +769,6 @@ details summary::-webkit-details-marker {
     font-size: 18px;
   }
 
-  /* END - TESTING NEW DESKTOP - HERO SECTION LAYOUT - END */
 
   /* Testimonials Section */
 
@@ -873,5 +861,16 @@ details summary::-webkit-details-marker {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  }
+
+  /* Add hover states to all hoverable links and buttons. - Can be further improved later */
+  .btn:hover,
+  header a:hover,
+  .card-front-CTA-btn:hover,
+  .card-back-btn:hover,
+  footer .social a:hover,
+  footer a:hover {
+    opacity: 0.75;
+    cursor: pointer;
   }
 }
