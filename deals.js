@@ -1,72 +1,211 @@
-const deals = [
-    {
-        front: {
-            imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
-            title: "Espresso Coffee",
-            price: "$3.00",
-            venue: "Lugo Cafe",
-            description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
-            itemTitle: "1x Regular Sized Coffee."
-        },
-        back: {
-            barcodeUrl: "./assets/images/0744109970238.jpg",
-            price: "$3.00",
-            venue: "Lugo Cafe",
-            location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
-            redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order.",
-            redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
-            // Additional back card information
-        }
+//  Create an object for each deal that currently exists - seperate to own js file later
+const deal1 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
     },
-    {
-        front: {
-            imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
-            title: "Espresso Coffee",
-            price: "$3.00",
-            venue: "Lugo Cafe",
-            description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
-            itemTitle: "1x Regular Sized Coffee."
-        },
-        back: {
-            barcodeUrl: "./assets/images/0744109970238.jpg",
-            price: "$3.00",
-            venue: "Lugo Cafe",
-            location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
-            redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order.",
-            redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
-            // Additional back card information
-        }
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D1",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
+
+const deal2 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
     },
-    {
-        front: {
-            imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
-            title: "Espresso Coffee",
-            price: "$3.00",
-            venue: "Lugo Cafe",
-            description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
-            itemTitle: "1x Regular Sized Coffee."
-        },
-        back: {
-            barcodeUrl: "./assets/images/0744109970238.jpg",
-            price: "$3.00",
-            venue: "Lugo Cafe",
-            location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
-            redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order.",
-            redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
-            // Additional back card information
-        }
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D2",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
+
+const deal3 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
     },
-    // ... other card objects
-];
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D3",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
 
+const deal4 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
+    },
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D4",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
 
+const deal5 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
+    },
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D5",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
 
-function renderDealCards() {
+const deal6 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
+    },
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D6",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
+
+const deal7 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
+    },
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D7",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
+
+const deal8 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
+    },
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D8",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
+
+const deal9 = {
+    front: {
+        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        title: "Espresso Coffee",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        description: "Indulge in the rich aroma & exquisite taste of our carefully brewed coffees at Lugo Cafe. Whether you're an early riser in need of your morning fix or looking for a cozy spot to unwind, we've got you covered.",
+        itemTitle: "1x Regular Sized Coffee."
+    },
+    back: {
+        barcodeUrl: "./assets/images/0744109970238.jpg",
+        price: "$3.00",
+        venue: "Lugo Cafe",
+        location: "Lugo Cafe, 100 Marine Terrace, Geraldton W.A",
+        redeemInfo1: "To claim this offer, simply present this card at the counter when placing your order. Test-D9",
+        redeemInfo2: "This offer is valid for a regular-sized coffee & cannot be combined with other promotions. Specialty drinks are not included. The offer is valid for the date of 01/01/23 between 9am - 5pm."
+        // Additional back card information
+    }
+};
+
+// Deals schedule - The 3 x deals that should be displayed on each day of the week
+const weeklyDeals = {
+    'Monday':   [deal1, deal2, deal3],
+    'Tuesday':  [deal4, deal5, deal6],
+    'Wednesday': [deal7, deal8, deal9],
+    'Thursday': [deal1, deal2, deal3],
+    'Friday':   [deal4, deal5, deal6],
+    'Saturday': [deal7, deal8, deal9],
+    'Sunday':   [deal4, deal5, deal6],
+};
+
+// Returns the deals for the current day
+const getCurrentDayDeals = () => {
+    const today = new Date().toLocaleDateString('en-us', { weekday: 'long' });
+    return weeklyDeals[today];
+}
+
+// Renders the deal cards to the UI - with the data returned from getCurrentDayDeals
+const renderDealCards = () => {
+    const todayDeals = getCurrentDayDeals();
     const cardsContainer = document.querySelector('.deals-multicard-wrapper');
-    cardsContainer.innerHTML = ''; // Clear existing cards
 
-    deals.forEach(card => {
-        const cardHtml = `
+    // Build up the entire HTML string in the loop and then set innerHTML once at the end. (for all 3 cards)
+    let cardsHtml = '';
+
+    todayDeals.forEach(card => {
+        cardsHtml += `
             <div class="card">
                 <div class="card--front">
                     <div class="img-wrapper">
@@ -100,14 +239,28 @@ function renderDealCards() {
                 </div>
             </div>
         `;
-        cardsContainer.innerHTML += cardHtml;
     });
+    cardsContainer.innerHTML = cardsHtml;
+};
+
+// Automatically update the deal cards on the website at midnight each day
+const scheduleDealUpdate = () => {
+    const now = new Date();
+    const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    // Calculates the time (in milliseconds) until the next midnight.
+    const timeUntilMidnight = nextMidnight.getTime() - now.getTime();
+
+    setTimeout(() => {
+        renderDealCards();
+        scheduleDealUpdate(); // Reschedule for the next day
+    }, timeUntilMidnight);
 }
 
 
 document.addEventListener('DOMContentLoaded', () => {
     // Render cards first
     renderDealCards();
+    scheduleDealUpdate();
 
     // Event delegation for card flipping
     const cardsContainer = document.querySelector('.deals-multicard-wrapper');
