@@ -682,7 +682,6 @@ details summary::-webkit-details-marker {
 }
 
 
-
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
 
@@ -845,8 +844,8 @@ details summary::-webkit-details-marker {
     margin: 1rem 0;
   }
 
-  .footer-div-3 li:nth-of-type(4),
-  .footer-div-3 li:nth-of-type(5) {
+  .footer-div-3 li:nth-of-type(5),
+  .footer-div-3 li:nth-of-type(6) {
     display: none;
   }
 
@@ -872,5 +871,43 @@ details summary::-webkit-details-marker {
   footer a:hover {
     opacity: 0.75;
     cursor: pointer;
+  }
+}
+
+
+/* Below is only relevant for hero section, ensure it stays below other CSS media queries */
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+
+  .hero-section {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .hero__img {
+    width: 50%;
+  }
+
+  .hero-text-wrapper--desktop {
+    width: 50%;
+  }
+
+  .hero-text__desktop-intro {
+    display: none;
+  }
+
+  .hero-text-wrapper--desktop .section__title {
+    font-size: 35px;
+  }
+
+  .hero-text-wrapper--desktop .section__description {
+    font-size: 16px;
+  }
+
+
+}
+
+@media screen and (min-width: 1035px) and (max-width: 1150px) {
+
+  .hero-text__desktop-intro {
+    display: block;
   }
 }
