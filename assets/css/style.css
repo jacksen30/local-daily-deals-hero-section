@@ -109,6 +109,10 @@ The element will be visually hidden but will still be read by screen reader tech
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
 }
@@ -134,14 +138,14 @@ section {
 }
 
 .btn {
-  height: 40px;
+  padding: 12px 22px;
   text-align: center;
   font-family: 'Manrope', sans-serif;
-  font-size: 12px; /* 10.083px */
+  font-size: 12.5px; /* 10.083px */
   font-weight: 600;
   line-height: 120%; /* 12.099px */
   border-radius: 4px;
-  padding: 0 22px;
+  text-decoration: none;
 }
 
 .btn--primary {
@@ -201,7 +205,7 @@ header.open nav.flex {
 }
 
 .header-btn {
-  height: 32px;
+  padding: 8.2px 22px;
 }
 
 .header-btn.open {
