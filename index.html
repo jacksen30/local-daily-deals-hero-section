@@ -24,9 +24,9 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
         <script src="https://kit.fontawesome.com/5b0bc60eb6.js" crossorigin="anonymous"></script>
 
-        <script src="deals-data.js" defer></script>
-        <script src="deals-rendering.js" defer></script>
-        <script src="script.js" defer></script>
+        <script src="./scripts/deals-data.js" defer></script>
+        <script src="./scripts/deals-rendering.js" defer></script>
+        <script src="./scripts/script.js" defer></script>
     </head>
 
     <body>
@@ -41,11 +41,11 @@
                     <div class="bar"></div>
                 </div>
                 <ul id="nav-list" class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./pages/blog.html">Blog</a></li>
+                    <li><a href="./pages/about-us.html">About Us</a></li>
                 </ul>
-                <a href="#" class="btn btn--primary header-btn" id="header-btn">FAQs</a>
+                <a href="./pages/faq.html" class="btn btn--primary header-btn" id="header-btn">FAQs</a>
             </nav>
         </header>
 
@@ -59,7 +59,7 @@
                         <h2 class="section__title">We aren't just <span class="green">Discounts</span> We're a Community Hub.</h2>
                         <p class="section__description">We're here to connect you with the vibrant food scene in Geraldton, helping you uncover hidden gems and supporting the backbone of our community - local businesses.</p>
                         <div class="flex hero-section__btn-wrapper">
-                            <a href="#" class="btn btn--secondary">Our Blog</a>
+                            <a href="./pages/blog.html" class="btn btn--secondary">Our Blog</a>
                             <a href="#todays-amazing-deals" class="btn btn--primary">See Todays Amazing Deals</a>
                         </div>
                     </div>
@@ -247,7 +247,7 @@
 
                     <details class="accordion-div">
                         <summary class="accordion-question">Would you like more information?<img class="custom-icon" src="./assets/images/icon-arrow-down.svg" alt=""></summary>
-                        <p class="accordion-answer">If you didn't find what you were looking for, our complete FAQ section has more answers. Just click <a href="#">here to explore further.</a></p>
+                        <p class="accordion-answer">If you didn't find what you were looking for, our complete FAQ section has more answers. Just click <a href="./pages/faq.html">here to explore further.</a></p>
                     </details>
                     <hr>
 
@@ -285,18 +285,18 @@
                         <path d="M1 1H371" stroke="#D0D0D0" stroke-linecap="round"/>
                     </svg>
                     <ul>
-                        <li><a href="#">Read Our Blog</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Getting  Your Deal Featured</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms and Condtions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="./pages/blog.html">Read Our Blog</a></li>
+                        <li><a href="./pages/faq.html">FAQs</a></li>
+                        <li><a href="./pages/getting-featured.html">Getting  Your Deal Featured</a></li>
+                        <li><a href="./pages/contact.html">Contact Us</a></li>
+                        <li><a href="./pages/terms-and-conditions.html">Terms and Condtions</a></li>
+                        <li><a href="./pages/privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
             <div class="flex container bottom-container">
                 <span class="footer__text--bottom">© 2023 Geraldton Daily Deals.</span>
-                <span class="footer__text--bottom footer__text--bottom-desktop"><a href="#">Terms and Conditions</a><span class="divider-b">.</span><a href="#">Privacy Policy</a></span>
+                <span class="footer__text--bottom footer__text--bottom-desktop"><a href="./pages/terms-and-conditions.html">Terms and Conditions</a><span class="divider-b">.</span><a href="./pages/privacy-policy.html">Privacy Policy</a></span>
             </div>
         </footer>
     </body>
