@@ -688,6 +688,24 @@ details summary::-webkit-details-marker {
   margin-right: 24px;
 }
 
+/* Privacy Policy Page Styling */
+
+.privacy-policy-section ul {
+  padding-inline-start: 20px;
+}
+
+.privacy-policy-section ul li {
+  padding-bottom: 10px;
+}
+
+.privacy-policy-section h3 {
+  padding: 15px 0px 8px 0px;
+}
+
+.privacy-policy-section h4 {
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
 
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
