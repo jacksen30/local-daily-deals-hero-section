@@ -12,31 +12,6 @@ modalCloseBtn.addEventListener('click', function(){
     modal.style.display = 'none'
 })
 
-// signupFormPrelaunch.addEventListener('submit', function(e){
-//     e.preventDefault()
-
-//     const signupPrelaunchFormData = new FormData(signupFormPrelaunch)
-//     const fullName = signupPrelaunchFormData.get('fullName');
-//     let firstName = fullName.split(' ')[0];
-
-//     modalInner.innerHTML = `
-//         <h2>🍔Epic Eats,<br>🤑 Smart Savings!<h2>
-//         <br>
-//         <h3>Welcome ${firstName}, </h3>
-//         <br>
-//         <p>You've unlocked the secret to epic eats with smart savings. As part of our community, you'll feast on deals that are as kind to your wallet as they are to your palate.</p>
-//         <br><br>
-//         <p>Stay tuned! We will email you when the first deals become available 👍</p>
-//     `
-
-//     setTimeout(function(){
-//         modal.style.display = 'none';
-//     }, 8000) /* Shorten time once modal is full tested and text content is completed */
-// })
-
-
-
-/* NEW CODE */
 
 signupFormPrelaunch.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -56,19 +31,21 @@ signupFormPrelaunch.addEventListener('submit', (e) => {
         modalInner.innerHTML = `
         <h2>🍔Epic Eats,<br>🤑 Smart Savings!<h2>
         <br>
-        <h3>Welcome ${firstName}, </h3>
-        <br>
-        <p>You've unlocked the secret to epic eats with smart savings. As part of our community, you'll feast on deals that are as kind to your wallet as they are to your palate.</p>
-        <br><br>
-        <p>Stay tuned! We will email you when the first deals become available 👍</p>
+        <h3>Welcome ${firstName},<br><br>You've unlocked the secret to epic eats with smart savings. As part of our community, you'll feast on deals that are as kind to your wallet as they are to your palate.<br><br>Stay tuned! We will email you when the first deals become available 👍 </h3>
         `
 
         setTimeout(function(){
             modal.style.display = 'none';
-        }, 8000) /* Shorten time once modal is full tested and text content is completed */
+        }, 3000)
         })
         .catch((error) => {
         // Handle errors, e.g., show error message
         alert('Error submitting the form. Please try again later.');
         });
 });
+
+
+{/* <br>
+        <p>You've unlocked the secret to epic eats with smart savings. As part of our community, you'll feast on deals that are as kind to your wallet as they are to your palate.</p>
+        <br><br>
+        <p>Stay tuned! We will email you when the first deals become available 👍</p> */}

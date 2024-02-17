@@ -712,7 +712,7 @@ details summary::-webkit-details-marker {
 .modal {
   display: none;
   position: fixed;
-  padding: 12px;
+  /* padding: 12px; */
   right: 0;
   left: 0;
   top: 0;
@@ -727,6 +727,10 @@ details summary::-webkit-details-marker {
   z-index: 1000; /* Ensure modal stays on top of footer */
 }
 
+.modal-inner {
+  margin: 0px 12px;
+}
+
 .close-modal-btn-container {
   display: flex;
   flex-direction: row;
@@ -734,7 +738,8 @@ details summary::-webkit-details-marker {
 }
 
 .modal-close-btn {
-  font-size: 22px;
+  margin: 2px;
+  font-size: 24px;
   font-weight: bold;
   background-color: transparent;
   border: 1px solid transparent;
@@ -760,6 +765,15 @@ details summary::-webkit-details-marker {
   width: 90%;
   padding: 3px;
   margin: 5px 0px;
+}
+
+.modal-btn {
+  margin-top: 5px;
+
+  background-color: var(--color1);
+  color: white;
+  font-weight: 600;
+  border-radius: 0px;
 }
 
 /* Media Queries for viewports wider that 768px */
