@@ -707,6 +707,61 @@ details summary::-webkit-details-marker {
   padding-bottom: 8px;
 }
 
+/* pop-up modal - alerts deals are not yet active */
+
+.modal {
+  display: none;
+  position: fixed;
+  padding: 12px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 490px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 2px #666;
+  background-color: #212529;
+  color: whitesmoke;
+  z-index: 1000; /* Ensure modal stays on top of footer */
+}
+
+.close-modal-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: whitesmoke;
+  text-align: right;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+  color: red;
+  cursor: pointer;
+}
+
+.signup-form-prelaunch {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 0px 15px 0px;
+  width: 100%;
+}
+
+.signup-form-prelaunch input {
+  width: 90%;
+  padding: 3px;
+  margin: 5px 0px;
+}
+
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
 

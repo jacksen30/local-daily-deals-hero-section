@@ -90,8 +90,4 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.toggle("is-flipped");
         }
     });
-
-    // Alert the user that the site is a work in progress
-    alert("Notice: This site will be up and running soon. The meal deals are not yet available.");
-
 });
