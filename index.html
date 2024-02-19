@@ -257,25 +257,27 @@
 
             </section>
         </main>
-        <div class="modal" id="modal">
+        <div class="modal" id="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
             <div class="close-modal-btn-container">
-                <button class="modal-close-btn" id="modal-close-btn">X</button>
+                <button class="modal-close-btn" id="modal-close-btn" aria-label="Close">X</button>
             </div>
             <div class="modal-inner" id="modal-inner">
                 <div class="modal-text" id="modal-text">
-                    <h2>🍔 Get Ready to Indulge! 🥗</h2>
+                    <h2 id="modalTitle">🍔 Get Ready to Indulge! 🥗</h2>
                     <br>
-                    <p>Craving something special? You're in luck! Our website is gearing up to showcase daily meal specials from the finest cafes and restaurants in your area.</p>
+                    <p id="modalDescription">Craving something special? You're in luck! Our website is gearing up to showcase daily meal specials from the finest cafes and restaurants in your area.</p>
                     <br>
                     <p>Sign up now with your name and email, and we'll make sure you're the first to know when we're live.</p>
                 </div>
                 <form class="signup-form-prelaunch" id="signup-form-prelaunch" name="signup-form-prelaunch" method="POST" data-netlify="true">
+                    <label for="fullName" class="sr-only">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required/>
 
-                    <input type="text" name="fullName" placeholder="Enter your full name" required/>
-                    <input type="email" name="email" placeholder="Enter your email" required/>
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required/>
 
                     <div class="modal-choice-btns" id="modal-choice-btns">
-                        <button type="submit" class="modal-btn">Submit</button>
+                        <button type="submit" class="modal-submit-btn">Submit</button>
                     </div>
                 </form>
                 <small>* TLDR: The meal deals displayed are not yet available</small>

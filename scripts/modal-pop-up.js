@@ -43,9 +43,3 @@ signupFormPrelaunch.addEventListener('submit', (e) => {
         alert('Error submitting the form. Please try again later.');
         });
 });
-
-
-{/* <br>
-        <p>You've unlocked the secret to epic eats with smart savings. As part of our community, you'll feast on deals that are as kind to your wallet as they are to your palate.</p>
-        <br><br>
-        <p>Stay tuned! We will email you when the first deals become available 👍</p> */}
