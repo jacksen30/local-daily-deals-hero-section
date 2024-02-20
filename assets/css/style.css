@@ -763,6 +763,13 @@ details summary::-webkit-details-marker {
   font-weight: 600;
 }
 
+/* Fuel Page */
+
+.fuel {
+  align-items: flex-start;
+}
+
+
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
 
