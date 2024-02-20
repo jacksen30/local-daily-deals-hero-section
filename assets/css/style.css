@@ -475,7 +475,7 @@ header.open nav.flex {
 /* Testimonials Section */
 .testimonials__card-wrapper {
   background-color: #FFF;
-  padding-top: 63px;
+  padding-top: 40px;
   gap: 20px;
 }
 
@@ -765,6 +765,10 @@ details summary::-webkit-details-marker {
 
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
+
+  .line-break-mobile-only {
+    display: none;
+  }
 
   header {
     padding: 0.5rem 1rem;
