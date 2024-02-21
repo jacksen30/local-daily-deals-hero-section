@@ -763,12 +763,40 @@ details summary::-webkit-details-marker {
   font-weight: 600;
 }
 
-/* Fuel Page */
+/* Fuel Page & Getting Featured Page */
 
-.fuel {
+.fuel,
+.getting-featured {
   align-items: flex-start;
 }
 
+/* Getting Your Deal Featured Page */
+
+.getting-featured .section__title {
+  text-align: left;
+}
+
+.getting-featured h2 {
+  font-size: 20px;
+}
+.getting-featured h3,
+.getting-featured h2,
+.getting-featured h4 {
+  margin: 10px 0px;
+}
+
+.getting-featured p {
+  margin-bottom: 10px;
+}
+
+.getting-featured ol {
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.getting-featured ol li{
+  margin-bottom: 12px;
+}
 
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
@@ -976,6 +1004,11 @@ details summary::-webkit-details-marker {
   .modal-close-btn:active {
   color: red;
   cursor: pointer;
+  }
+
+  /* Getting Your Deal Featured Page */
+  .getting-featured {
+    width: 50%;
   }
 
 }
