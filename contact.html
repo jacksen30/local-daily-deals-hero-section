@@ -22,9 +22,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/contact-page.css" />
         <script src="https://kit.fontawesome.com/5b0bc60eb6.js" crossorigin="anonymous"></script>
 
         <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/contact-form.js" defer></script>
     </head>
 
     <body>
@@ -48,6 +50,55 @@
         </header>
 
         <main class="main flex">
+            <section class="flex contact-us-section">
+                <div class="flex container contact-us">
+
+                    <div class="info-text">
+                        <h1 class="section__title">Get in Touch with Us at <span class="green">Geraldton Daily Deals!</span>🌟</h1>
+                        <p>Hey there! Got a burning question, or perhaps you're a local cafe looking to get your delicious deals in front of more Geraldton food lovers?</p>
+                        <p>We're all about building a community of food enthusiasts and supporting our local cafes and restaurants. Whether you're dining out, dishing up, or just saying hello, we're excited to hear from you. Reach out today!</p>
+                        <p><strong>📧 Drop us an email:</strong> info@geraldtondailydeals.com<br><br><strong>📝 Or fill out the contact form on this page.</strong></p>
+                    </div>
+
+                    <div class="right-side-desktop-container">
+                        <div class="signup-section-wrapper">
+                          <form id="contact-form" novalidate>
+
+                            <div id="full-name-wrapper" class="input-control">
+                              <label for="fullName" class="sr-only">Full Name</label>
+                              <input type="text" name="fullName" id="fullName" placeholder="Full Name" value="" autocomplete="name" autofocus>
+                              <p class="none error-message"><small>Name cannot be empty</small></p>
+                            </div>
+
+                            <div id="email-wrapper" class="input-control">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email Address" value="" autocomplete="email">
+                                <p class="none error-message"><small>Looks like this is not an email</small></p>
+                            </div>
+
+                            <div id="subject-wrapper" class="input-control">
+                                <label for="subject" class="sr-only">Subject of Enquiry:</label>
+                                <select id="subject" name="subject">
+                                    <option value="" disabled selected >Subject of Enquiry</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="question_deal">Question about a Deal</option>
+                                    <option value="technical_issue">Technical Issue</option>
+                                    <option value="partnership_inquiry">Partnership Enquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div id="message-wrapper" class="input-control">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea type="message" rows="5" name="message" id="message" placeholder="Type your message here" value="" autocomplete="false"></textarea>
+                                <p class="none error-message"><small>Message must be a minimum of 80 characters</small></p>
+                            </div>
+
+                            <button class="submit-btn" type="submit">Send Message</button>
+                          </form>
+                        </div>
+                    </div>
+            </section>
 
 
         </main>
