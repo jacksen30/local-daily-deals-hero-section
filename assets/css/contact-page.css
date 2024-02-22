@@ -29,7 +29,10 @@ main {
 form {
     border-radius: 20px;
     color: grey;
-    padding: 1.8rem;
+    /* padding: 1.8rem; */
+
+    padding: 0.75rem 1rem 1.5rem 1rem;
+    width: 350px;
 }
 
 input,
@@ -38,7 +41,7 @@ textarea {
     border: 1px solid gray;
     border-radius: 5px;
     color: hsl(249, 10%, 26%);
-    margin: 15px auto 0px auto; /* auto margins not working ?? */
+    margin: 10px auto 0px auto; /* auto margins not working ?? */
     font-size: 18.5px;
     font-weight: bold;
     width: 100%;
@@ -111,6 +114,11 @@ input:-webkit-autofill:active {
     .right-side-desktop-container {
         flex: 1 1 50%;
         margin-top: 0;
+    }
+
+    form {
+        width: unset;
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
     }
 
     .info-text {

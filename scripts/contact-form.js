@@ -46,7 +46,7 @@ function validateMessage(item) {
 
 function validate(){
     validateInput(fullName);
-    // validateInput(subject);
+    validateInput(subject);
     validateEmail(email);
     validateMessage(message);
 }
