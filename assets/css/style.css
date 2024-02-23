@@ -293,6 +293,7 @@ header.open nav.flex {
 /* Hero Section */
 .hero-section {
   flex-direction: column;
+  padding-top: 0.5rem;
 }
 
 .home-h1-heading {
