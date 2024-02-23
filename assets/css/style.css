@@ -171,6 +171,7 @@ section {
   text-align: center;
   font-size: 14px;
   line-height: 130%; /* 18px */
+  font-weight: 400;
 }
 
 .green {
