@@ -239,7 +239,8 @@ header.open nav.flex {
   border: 2px solid #0AB76E;
 }
 
-.header_brandname h1 {
+.header_brandname span {
+  display: block;
   font-family: 'Urbanist', sans-serif;
   font-weight: 500;
   padding: 5px 10px;
@@ -291,6 +292,12 @@ header.open nav.flex {
 /* Hero Section */
 .hero-section {
   flex-direction: column;
+}
+
+.home-h1-heading {
+  font-family: 'Gazpacho', serif;
+  font-weight: 900;
+  font-size: 26px;
 }
 
 .hero-text__desktop-intro {
@@ -887,7 +894,6 @@ details summary::-webkit-details-marker {
   .section__description {
     font-size: 18px;
   }
-
 
   /* Testimonials Section */
 
