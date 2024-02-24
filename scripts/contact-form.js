@@ -60,6 +60,7 @@ form.addEventListener('submit', (event) => {
     if (
         !fullName[1].classList.contains('incorrect') &&
         !email[1].classList.contains('incorrect') &&
+        !subject[1].classList.contains('incorrect') &&
         !message[1].classList.contains('incorrect')
       ) {
         // Submit the form data to Netlify manually
