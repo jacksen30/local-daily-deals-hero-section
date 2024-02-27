@@ -843,6 +843,10 @@ details summary::-webkit-details-marker {
     color: black;
   }
 
+  .mobile-display-only {
+    display: none;
+  }
+
   /* TESTING NEW DESKTOP - HERO SECTION LAYOUT */
   .hero {
     flex-direction: row-reverse;
@@ -853,7 +857,7 @@ details summary::-webkit-details-marker {
   }
 
   .hero__img {
-    width: 60%;
+    width: 62%;
     max-width: 650px;
   }
 

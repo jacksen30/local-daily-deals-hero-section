@@ -65,6 +65,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./fuel-prices.html">Fuel Prices</a></li>
+                    <li class="mobile-display-only"><a href="./contact.html">Contact Us</a></li>
                 </ul>
                 <a href="#frequently-asked-questions" class="btn btn--primary header-btn" id="header-btn">FAQs</a>
             </nav>
@@ -74,7 +75,12 @@
 
             <section class="flex hero-section">
                 <div class="flex container hero">
-                    <img class="hero__img"  src="./assets/images/burger-desktop.webp" alt="delicious burger" />
+                    <picture class="hero__img">
+                        <source media="(min-width: 600px)" type="image/webp" srcset="./assets/images/hero-img-desktop.webp">
+                        <source media="(min-width: 0px)" type="image/webp" srcset="./assets/images/hero-img-mobile.webp">
+                        <!-- Fallback image for small screens and browsers that do not support picture -->
+                        <img src="./assets/images/hero-img-desktop.webp" alt="delicious burger">
+                    </picture>
                     <div class="flex hero-text-wrapper--desktop">
                         <!-- <p class="hero-text__desktop-intro">Enjoy Amazing Discounts on Tempting Foods near you! 🤑🍔🍟</p> -->
                         <h1 class="home-h1-heading">Geraldton Daily Deals</h1>
