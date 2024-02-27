@@ -9,7 +9,7 @@ const getTodaysDate = () => {
 //  Create an object for each deal that currently exists
 const deal1 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -18,7 +18,7 @@ const deal1 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "Barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
@@ -31,7 +31,7 @@ const deal1 = {
 
 const deal2 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -40,7 +40,7 @@ const deal2 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
@@ -53,7 +53,7 @@ const deal2 = {
 
 const deal3 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -62,7 +62,7 @@ const deal3 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
@@ -75,7 +75,7 @@ const deal3 = {
 
 const deal4 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -84,7 +84,7 @@ const deal4 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
@@ -97,7 +97,7 @@ const deal4 = {
 
 const deal5 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -106,7 +106,7 @@ const deal5 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
@@ -119,7 +119,7 @@ const deal5 = {
 
 const deal6 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -128,7 +128,7 @@ const deal6 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
@@ -141,7 +141,7 @@ const deal6 = {
 
 const deal7 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -150,7 +150,7 @@ const deal7 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
@@ -163,7 +163,7 @@ const deal7 = {
 
 const deal8 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -172,7 +172,7 @@ const deal8 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
@@ -185,7 +185,7 @@ const deal8 = {
 
 const deal9 = {
     front: {
-        imageUrl: "./assets/images/coffee-requires-crop-resize.jfif",
+        imageUrl: "./assets/images/coffee-card-img.webp",
         frontImageAlt: "A delicious coffee",
         title: "Espresso Coffee",
         price: "$3.00",
@@ -194,7 +194,7 @@ const deal9 = {
         itemTitle: "1x Regular Sized Coffee.",
     },
     back: {
-        barcodeUrl: "./assets/images/0744109970238.jpg",
+        barcodeUrl: "./assets/images/barcode-optimized.webp",
         barcodeImageAlt: "barcode to scan",
         price: "$3.00",
         venue: "Lugo Cafe",
