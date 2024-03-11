@@ -180,7 +180,7 @@ section {
 
 /* Header Section */
 header {
-  position: relative;
+  /* position: relative; */
   background-color: #FFF;
   padding: 1rem;
   transition: 0.5s background-color 0s linear;
@@ -188,7 +188,6 @@ header {
 
 header.open {
   height: 100vh;
-  background-color: #16AA2D;
 }
 
 header nav.flex {
@@ -219,20 +218,49 @@ header.open nav.flex {
 /* When hamburger menu is open */
 .nav-list.open {
   display: block;
-  margin: 0px auto;
-  padding-top: 100px;
+  position:absolute;  /* TESTING CHANGES FOR MOBILE MENU */
+  left: -1rem;    /* TESTING CHANGES FOR MOBILE MENU */
+  padding-top: 50px;
   font-size: 30px;
+  margin-left: 0px;
 }
 
 .nav-list li {
-  padding: 12px 0px;
   font-family: 'Urbanist', sans-serif;
 }
 
+.nav-list li a i {
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 22px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  width: 45.2px;
+}
+
 .nav-list li a {
-  font-weight: 700;
-  color: white;
+  display: block;  /* TESTING CHANGES FOR MOBILE MENU */
+  /* font-weight: 700; */ /* TESTING CHANGES FOR MOBILE MENU */
+  font-weight: 400;
   text-decoration: none;
+  color: black;   /* TESTING CHANGES FOR MOBILE MENU */
+  padding: 12px 20px; /* TESTING CHANGES FOR MOBILE MENU */
+  /* padding-left: 100px; */
+  /* width: 100%; */
+}
+
+.nav-list.open li.current-page {
+  background-color: #7B38FF;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Nav List - On Mobile Current Page Highlighted in Menu */
+.nav-list.open li.current-page a {
+  color: white;
+}
+
+.nav-list li.current-page a i {     /* TESTING CHANGES FOR MOBILE MENU */
+  border-color: white;
 }
 
 .header_brandname {
@@ -274,7 +302,7 @@ header.open nav.flex {
   left: 50%; /* Center the bars horizontally in the container */
   transform: translate(-50%, -50%); /* This ensures the center of the bar is in the center of the container */
   width: 32px;
-  background-color: white;
+  background-color: #333;
 }
 
 .menu-icon.cross .bar:nth-child(1) {
@@ -841,6 +869,13 @@ details summary::-webkit-details-marker {
 
   .nav-list li a {
     color: black;
+    font-weight: 700;
+    padding: 0px;
+  }
+
+  /* Testing Remove icons when mobile menu not in use */
+  .nav-list li a i {
+    display: none;
   }
 
   .mobile-display-only {
