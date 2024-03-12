@@ -242,7 +242,7 @@ header.open nav.flex {
   display: block;
   font-weight: 400;
   text-decoration: none;
-  color: black;   
+  color: black;
   padding: 12px 20px;
 }
 
@@ -340,7 +340,7 @@ header.open nav.flex {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  gap: 20px; /* sets gap between btns, update / unset for desktop */
+  gap: 19px; /* sets gap between btns, update / unset for desktop */
   margin-top: 12px;
 }
 
