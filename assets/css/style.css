@@ -263,6 +263,11 @@ header.open nav.flex {
   border-color: white;
 }
 
+.nav-list.open li img {     /* TESTING CHANGES FOR MOBILE MENU */
+  max-width: 250px;
+  margin: auto;
+}
+
 .header_brandname {
   display: none;
   border: 2px solid #0AB76E;
