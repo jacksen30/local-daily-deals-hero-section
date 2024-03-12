@@ -239,14 +239,11 @@ header.open nav.flex {
 }
 
 .nav-list li a {
-  display: block;  /* TESTING CHANGES FOR MOBILE MENU */
-  /* font-weight: 700; */ /* TESTING CHANGES FOR MOBILE MENU */
+  display: block;
   font-weight: 400;
   text-decoration: none;
-  color: black;   /* TESTING CHANGES FOR MOBILE MENU */
-  padding: 12px 20px; /* TESTING CHANGES FOR MOBILE MENU */
-  /* padding-left: 100px; */
-  /* width: 100%; */
+  color: black;   
+  padding: 12px 20px;
 }
 
 .nav-list.open li.current-page {
