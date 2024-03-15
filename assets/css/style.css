@@ -138,14 +138,11 @@ section {
   padding: 12px 22px;
   text-align: center;
   font-family: 'Manrope', sans-serif;
-  font-size: 12.5px; /* 10.083px */
+  font-size: 12.5px;
   font-weight: 600;
-  line-height: 120%; /* 12.099px */
+  line-height: 120%;
   border-radius: 4px;
   text-decoration: none;
-}
-
-.btn--primary {
   color: #FFF;
   background-color: #0AB76E;
   border: 1px solid #0AB76E;
@@ -153,6 +150,7 @@ section {
 
 .btn--secondary {
   color: #0AB76E;
+  background-color: #FFF;
   border: 1px solid #0AB76E;
 }
 
@@ -180,8 +178,6 @@ section {
 
 /* Header Section */
 header {
-  /* position: relative; */
-  background-color: #FFF;
   padding: 1rem;
   transition: 0.5s background-color 0s linear;
 }
@@ -218,8 +214,8 @@ header.open nav.flex {
 /* When hamburger menu is open */
 .nav-list.open {
   display: block;
-  position:absolute;  /* TESTING CHANGES FOR MOBILE MENU */
-  left: -1rem;    /* TESTING CHANGES FOR MOBILE MENU */
+  position:absolute;
+  left: -1rem;
   padding-top: 50px;
   font-size: 30px;
   margin-left: 0px;
@@ -252,15 +248,13 @@ header.open nav.flex {
 }
 
 /* Nav List - On Mobile Current Page Highlighted in Menu */
-.nav-list.open li.current-page a {
+.nav-list.open li.current-page a,
+.nav-list li.current-page a i {
   color: white;
-}
-
-.nav-list li.current-page a i {     /* TESTING CHANGES FOR MOBILE MENU */
   border-color: white;
 }
 
-.nav-list.open li img {     /* TESTING CHANGES FOR MOBILE MENU */
+.nav-list.open li img {
   max-width: 250px;
   margin: auto;
 }
@@ -268,10 +262,6 @@ header.open nav.flex {
 .header_brandname {
   display: none;
   border: 2px solid #0AB76E;
-}
-
-.header_brandname span {
-  display: block;
   font-family: 'Urbanist', sans-serif;
   font-weight: 500;
   padding: 5px 10px;
